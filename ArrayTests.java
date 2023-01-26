@@ -12,7 +12,7 @@ public class ArrayTests {
     ArrayExamples.reverseInPlace(input2);
 
     //test passes
-    assertArrayEquals("demonstrating that the actual output is incorrect", 
+    assertArrayEquals("demonstrating that the actual output is now correct", 
         input2, new int[]{5,4,3,2,1});
 	}
 
@@ -24,6 +24,12 @@ public class ArrayTests {
 
     int[] input2 = {1,2,3,4,5};
     assertArrayEquals(ArrayExamples.reversed(input2), new int[] {5,4,3,2,1});
+  }
+
+  @Test 
+  public void testMinimum() {
+    double[] input1 = {1,2,3,4,5};
+    assertEquals("test", ArrayExamples.averageWithoutLowest(input1), 14.0/4, 0.01);
   }
 
   
